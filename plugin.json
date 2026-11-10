@@ -9,11 +9,12 @@
   },
   "author": "hugh",
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/luoxufeiyan/qwenpaw-plugin-mistral",
   "entry": {
     "backend": "plugin.py"
   },
   "qwenpaw_version": {
     "min": "2.2.2"
-  }
+  },
+  "repository": "https://github.com/luoxufeiyan/qwenpaw-plugin-mistral"
 }
