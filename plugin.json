@@ -1,0 +1,19 @@
+{
+  "id": "mistral",
+  "name": "Mistral AI",
+  "version": "1.0.0",
+  "type": "provider",
+  "description": "Mistral AI provider with full reasoning support: translates DeepSeek-style reasoning_content into Mistral's ThinkChunk format in both directions (JSON + SSE), keeps ThinkingBlock alive through AgentScope's OpenAI formatter, maps thinking levels to reasoning_effort, and enables prompt_cache_key for 10%-price cached input.",
+  "description_i18n": {
+    "zh-CN": "Mistral AI 供应商：双向翻译 reasoning_content 与 ThinkChunk（含 SSE 流式），保住被 AgentScope 丢弃的思考块，把 thinking level 映射到 reasoning_effort，并启用 prompt_cache_key 以命中 10% 计价的缓存输入。"
+  },
+  "author": "hugh",
+  "license": "MIT",
+  "homepage": "",
+  "entry": {
+    "backend": "plugin.py"
+  },
+  "qwenpaw_version": {
+    "min": "2.2.2"
+  }
+}
