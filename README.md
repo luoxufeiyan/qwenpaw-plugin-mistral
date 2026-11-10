@@ -17,15 +17,18 @@ Mistral 把思考内容放在 `content` 的 chunk 列表里，而 openai SDK 把
 ## 安装
 
 ```bash
-qwenpaw plugin install https://github.com/luoxufeiyan/qwenpaw-plugin-mistral
-```
+# 从 Release 附件安装（推荐，版本固定）
+qwenpaw plugin install https://github.com/luoxufeiyan/qwenpaw-plugin-mistral/releases/download/v1.0.0/mistral-plugin-1.0.0.zip
 
-或从本地目录：
+# 或从 main 分支快照安装（跟随最新提交）
+qwenpaw plugin install https://codeload.github.com/luoxufeiyan/qwenpaw-plugin-mistral/zip/refs/heads/main
 
-```bash
+# 或克隆后从本地目录安装
 git clone https://github.com/luoxufeiyan/qwenpaw-plugin-mistral
 qwenpaw plugin install ./qwenpaw-plugin-mistral --force
 ```
+
+> 注意：**不要直接传仓库页面地址**（`https://github.com/user/repo`）。安装器只会下载并解压 URL 返回的内容，而仓库页面返回的是 HTML，会解压失败。要用 zip 直链。
 
 安装后热加载，无需重启。在「模型 / 供应商」里会多出 **Mistral AI**，base URL 已预填 `https://api.mistral.ai/v1`，填入 API key 即可。
 
