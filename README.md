@@ -88,7 +88,11 @@ Mistral 文档的支持列表里没有 DeepSeek，但 2026-11-10 用真实 key �
 ## 安装
 
 ```bash
-qwenpaw plugin install /app/working/plugins/mistral --force
+# 从 GitHub 仓库安装
+qwenpaw plugin install https://github.com/luoxufeiyan/qwenpaw-plugin-mistral
+
+# 或从本地目录
+qwenpaw plugin install /path/to/qwenpaw-plugin-mistral --force
 ```
 
 热加载，无需重启。日志应为：
